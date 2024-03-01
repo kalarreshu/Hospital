@@ -1,0 +1,70 @@
+!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title><style type="text/css">
+	div{
+		height:200px ;
+		width: 200px;
+		background-color:pink ;
+		transition-property: width ,height,background-color;
+		transition-duration: 4s;
+		transition-timing-function: ease;
+	}
+	div:hover{
+		width: 400px;
+		height: 400px;background-color: black;
+	}
+	.box{
+		width: 300px;
+		height: 300px;
+		background-color: red;
+		transform: perspective(700px) rotateX(30deg);
+	}
+	h2{
+/*		border-bottom: 1px solid black;*/
+		margin: 100px auto;
+		cursor: pointer;
+		position: relative;
+		width: max-content;
+		-webkit-text-stroke:2px black;
+		color: transparent;
+		font-size: 70px;
+		font-style: italic;
+	}
+	h2::after{
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		height: 4px;
+		width: 100%;
+		left: 0;
+		background-color: #000;
+		transition: 0.3s;
+		transition-timing-function: ease-in-out;
+		transform: scaleX(0);
+
+
+
+	}
+	h2:hover::after{
+		transform: scaleX(1);
+		width: 100%;
+	}
+	.back{
+		width: 300px;
+		height: 300px;
+		background-color:slateblue;
+
+	}
+
+</style>
+</head>
+<body>
+<div></div>
+<div class="box"></div> 
+<h2>KRISHNA</h2>
+<div class="back">FRONT</div>
+</body>
+</html>

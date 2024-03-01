@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+/*              navbarstrt*/
+header{
+                     width:100%;
+                     height: 65px;
+                     background-color:rgba(0, 0, 0, 0.3);
+                     display: flex;
+                     justify-content: space-between;
+                     align-items:center;
+                     font-size: 20px;
+}
+              .logo{
+                     font-size: 20px;
+                     font-weight: bold;
+                     color: white;
+                     letter-spacing: 1.5px;
+                     cursor: pointer;
+                     mix-blend-mode: multiply;
+                     margin-top: 20px;
+                     margin-left: 0px;
+
+
+              }
+              nav li{
+                     display: inline-block;
+                     padding: 0px 20px;
+                     font-weight: bold;
+                     font-style: italic;
+              }
+              .classname a,button{
+                     font-size: 20px;
+                     font-weight: bold;
+                     color: white;
+                     text-decoration: none;
+                     padding:12px 12px 12px ;
+                     border-radius: 32px;
+                     background-color: gray;
+                     width:12%;
+
+              }
+              
+
+             a,button{
+                     font-size: 20px;
+                     font-weight: bold;
+                     color: white;
+                     text-decoration: none;
+
+              }
+              nav li a:hover {
+        color: #008000;
+
+              }
+              .classname a:hover{
+                     background-color:white(0,0,0,0.5);
+/*                   border-color: rgb(255,179,102);*/
+                     width: 12%;
+                     color:black;
+                     transition: 5s;
+                     
+                     font-style: italic;
+                     font-size: 24px;
+              }
+/*navbarends*/
+		.container{
+			width:100%;
+			height: 100vh;
+            background-image: linear-gradient(rgba(0,0,50,0.6),rgba(0,0,50,0.6)),url(all.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+          }
+          .form-box{
+          	width: 30%;
+          	max-width: 320px;
+          	position:absolute;
+          	top: 50%;
+          	left: 50%;
+          	transform: translate(-50%,-50%);
+          	background: #fff;
+          	padding: 50px 60px 70px;
+          	text-align: center;
+          }
+          .form-box h1{
+          	font-size: 30px;
+          	margin-bottom: 60px;
+          	color: #3c00a0;
+          	position: relative;
+          }
+          .form-box h1::after{
+          	content: '';
+          	width: 30px;
+          	height: 4px;
+          	border-radius: 3px;
+          	background: #3c00a0;
+          	position: absolute;
+          	bottom: -12px;
+          	left: -50%;
+          	transform: translateX(-50%);
+          	
+          }
+          .input-field{
+          	background: #eaeaea;
+          	margin: 15px 0;
+          	border-radius: 3px;
+          	display: flex;
+          	align-items: center;
+          	max-height: 65px;
+          	transition: max-height 0.5s;
+          	overflow: hidden ;
+
+
+          }
+          input{
+          	width: 100%;
+          	background: transparent;
+          	border: 0;
+          	outline: 0;
+          	padding: 18px 15px;
+          }
+          .input-field i{
+          	margin-left: 15px;
+          	color: #999;
+          }
+          form p{
+          	text-align: left;
+          	font-size: 13px;
+          }
+          form p a{
+          	text-decoration: none;
+          	color: #3c00a0;
+          }
+          .btn-field{
+          	width :100%;
+          	display: flex;
+          	justify-content: space-between;
+          	font-size: 20px;
+
+          }
+          .btn-field button{
+          	flex-basis: 48%;
+          	background: #3c00a0;
+          	color: #fff;
+          	height: 40px;
+          	border-radius: 20px;
+          	border: 0;
+          	outline: 0;
+          	cursor: pointer;
+          	transition: background 1s;
+          	margin-left: 100px;
+          }
+          .button:hover{
+          	font-size: 24px;
+          }
+
+
+          
+	</style>
+</head>
+<body>
+       <!-- header srt  -->
+       <section>
+       <header>
+              <div class="logo">
+                     <img src="loggo.jpg">
+              </div>
+              <nav><ul>
+              <li><a href="index.html">HOME</li>
+              <li><a href="about.html">ABOUT</li>
+              <li><a href="ser.html">SERVICE</li>
+              <li><a href="contact.html">CONTACT</li>
+                     <li><a href="ourdr.html">OUR DOCTORS</li>
+              </ul></nav>
+               <button class="classname"><a href="sign.html">SIGN IN</a></button>
+    </header>
+       <!-- header ends -->
+ <div class="container">
+ 	<div class="form-box">
+ 	<h1 id="title">Sign Up</h1>
+ 	<form>
+ 		<div class="input-group">
+        <div class="input-field" id="namefield">
+        	<i class="fa fa-user" aria-hidden="true"></i>
+        	<input type="text" placeholder="Name">
+        </div>
+        <div class="input-field">
+        	<i class="fa fa-envelope" aria-hidden="true"></i>
+        	<input type="email" placeholder="Email">
+        </div>
+        <div class="input-field">
+        	<i class="fa fa-lock" aria-hidden="true"></i>
+        	<input type="password" placeholder="Password">
+        </div>
+        <p>Lost password <a href="#">Click Here!</p>
+        	</div>
+        	<div class="btn-field">
+        		<button type="button">Sign up</button>
+        		</div>
+
+
+
+
+        	
+        	
+        </div> 
+ 		</div>
+ 	</form>
+ </div>
+</div>
+<script>
+	let signupbtn = document.getElementById("signupBtn")
+	let namefield= document.getElementById("namefield")
+
+	
+</script>
+
+</body>
+</html>

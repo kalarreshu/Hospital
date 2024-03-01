@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	body{
+			background-color: black;
+			 background-image: linear-gradient(rgba(0,0,50,0.6),rgba(0,0,50,0.6));
+		}
+		header{
+			width:100%;
+			height: 65px;
+			background-color: white;
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			font-size: 20px;
+}
+		.logo{
+			font-size: 20px;
+			font-weight: bold;
+			color: black;
+			letter-spacing: 1.5px;
+			cursor: pointer;
+			mix-blend-mode: multiply;
+			margin-top: 20px;
+			margin-left: 0px;
+
+
+		}
+		nav li{
+			display: inline-block;
+			padding: 0px 20px;
+			font-weight: bold;
+			color: black;
+			font-style: italic;
+		}
+		.classname a,button{
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+			border-radius: 32px;
+			background-color: gray;
+			width: 150px;
+			height: 60px;
+
+		}
+		
+
+	      a{
+			font-size: 20px;
+			font-weight: bold;
+			color: black;
+			
+			text-decoration: none;
+
+		}
+		button{
+			font-size: 20px;
+			font-weight: bold;
+			color: black;
+			border-bottom: 5px solid black ;
+			text-decoration: none;
+
+		}
+		nav li a:hover {
+        color: #008000;
+
+		}
+		.classname a:hover{
+			background-color:white(0,0,0,0.5);
+/*			border-color: rgb(255,179,102);*/
+			width: 12%;
+			color:black;
+			transition: 5s;
+			
+			font-style: italic;
+			font-size: 24px;
+		}
+/*headerend*/
+.cards{
+			width: 450px; height: 550px;
+/*			border: 2px solid rgba(102, 153,204);*/
+			background-color: black transparent;
+			border-radius: 20px;
+			margin: 60px;
+			display: inline-block;
+			margin-right: 20px;
+			border:5px solid black;
+			box-shadow: 10px 10px 10px black;
+			
+		}
+		.image img{
+			width: 100%;
+			height: auto;
+			border-radius: 20px;
+			width:350px;
+			height: 300px;
+			margin-top: 30px;
+			margin-left: 40px;
+			margin-right: 20px;
+	    }
+	 .title h1{
+	 	text-align: center;
+	 	font-family: sans-serif;
+	 	color:black;
+	 	margin-top: 3px;
+	 	font-size: 30px;
+	 }
+	 .desc p{
+	 	text-align: center;
+	 	font-size: 20px;
+	 	font-family: Arial;
+	 	color: #666;
+	 }
+	 .main{
+	 	background-color: #ebebe0;
+	 	margin: 120px;
+	 	margin-top: 50px;
+	 	margin-bottom: 50px;
+	 	padding: 20px;
+
+	 }
+	 center{
+/*	 	background-color: rgba(102, 153, 204,0.7);*/
+	 	font-size: 50px;
+	 	font-family: Arial;
+	 	color:black;
+	 	text-shadow: 2px 2px 2px black;
+
+	 }
+	 center:hover{
+	 	font-size: 60px;
+	 	transition-duration: 3s;
+	 	color: black;
+	 }
+	 .btn1{
+	 	width: 100px;
+	 	height: 60px;
+	 	border-radius: 20px;
+	 	color: black;
+	 	background-color: gray;
+	 	margin: 5px;
+	 }
+	 button:hover{
+	 	background-color:black ;
+	 	color: white;
+	 }
+
+</style>
+</head>
+<body>
+ <!-- header strt -->
+	       <section>
+	<header>
+		<div class="logo">
+			<img src="loggo.jpg">
+		</div>
+		<nav><ul>
+		<li><a href="index.html">HOME</li>
+		<li><a href="about.html">ABOUT</li>
+		<li><a href="ser.html">SERVICE</li>
+		<li><a href="contact.html">CONTACT</li>
+			<li><a href="ourdr.html">OUR DOCTORS</li>
+		</ul></nav>
+		 <button class="classname"><a href="sign.html">SIGN IN</a></button>
+    </header>
+	       <!-- header end -->
+	       <div class="main">
+	<center>Our Doctors</center>
+    <div class="cards">
+			<div class="image">
+				<img src="charu.jpg">
+			</div>
+			<div class="title">
+				<h1><b>Dr.Charu Pathak</b></h1>
+			</div>
+			<div class="desc">
+				<p>Dr.Charu Pathak is an excellent clinician and a skilled Obstetrics and Gynaecologist with a decade of experience in Gynaecology. Her expertise covers all domains of Obstetrics and Gynaecology.</p>
+			</div></div>
+	 <div class="cards">
+			<div class="image">
+				<img src="nitin.jpg">
+			</div>
+			<div class="title">
+				<h1><b>Dr.Nitin-das</b></h1>
+			</div>
+			<div class="desc">
+				<p>Dr.Nitin Das is an excellent and skilled Cardiovascular and Thorocic Surgeon with 15 years of experience in CVTS. His expertise covers all domains of Cardiovascular and Thorocic Surgery.</p>
+			</div></div>
+	 <div class="cards">
+			<div class="image">
+				<img src="malti.jpg">
+			</div>
+			<div class="title">
+				<h1><b>Dr.Malti bhagat</b></h1>
+			</div>
+			<div class="desc">
+				<p>Dr.Malti bhagat is an excellent Radiologist and Radiotherapist with a decade of experience in Radiology. Her expertise covers all domains of Obstetrics and Radiotherapy.</p>
+			</div></div>
+	 <div class="cards">
+			<div class="image">
+				<img src="prateek.jpg">
+			</div>
+			<div class="title">
+				<h1><b>Dr.Prateek kumar</b></h1>
+			</div>
+			<div class="desc">
+				<p>Dr. Prateek Kumar Singh is a Joint Replacement and Arthroscopy Surgeon based in Jabalpur with experience of more than 4 years</p>
+			</div></div>
+	<div class="cards">
+			<div class="image">
+				<img src="avni.jpg">
+			</div>
+			<div class="title">
+				<h1><b>Dr.Avani agrawal</b></h1>
+			</div>
+			<div class="desc">
+				<p>Dr.Avani Agrawal is an excellent clinician and a skilled Obstetrics and Gynaecologist with more then 5 Years of experience in Gynaecology. Her expertise covers all domains of Obstetrics and Gynaecology.</p>
+			</div></div>
+	 <div class="cards">
+			<div class="image">
+				<img src="Ashish.png">
+			</div>
+			<div class="title">
+				<h1><b>Dr.Ashish Tiwari</b></h1>
+			</div>
+			<div class="desc">
+				<p>Dr.Ashish is an excellent clinician and a skilled interventional cardiologist with a decade of experience in interventional cardiology. His expertise covers all domains of interventional and non interventional cardiology.
+9 Years of experience in Interventional Cardiology.</p>
+			</div></div>
+	
+
+			
+</body>
+</html>

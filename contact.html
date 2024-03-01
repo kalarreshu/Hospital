@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	body{
+		background-size: cover;
+		background-image: url("hospital.jpeg");
+	}
+/*header strt	*/
+header{
+			width:100%;
+			height: 65px;
+			background-color:rgba(0, 0, 0, 0.3);
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			font-size: 20px;
+		}
+		.logo{
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			letter-spacing: 1.5px;
+			cursor: pointer;
+			mix-blend-mode: multiply;
+			margin-top: 20px;
+			margin-left: 0px;
+
+		}
+		nav li{
+			display: inline-block;
+			padding: 0px 20px;
+			font-weight: bold;
+		}
+		.classname a{
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+			width: 150px;
+			
+
+		}
+		
+
+	      a,button{
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+
+			
+
+
+		}
+		button: hover{
+			background-color:white(0,0,0,0.3);
+			border-color: rgb(255,179,102);
+			width: 20%;
+			color: black;
+		}
+		button{
+			border-radius: 32px;
+			border: 2px solid;
+			font-style: italic;
+			padding: 9px;
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		div{
+			margin-top: 300px;
+			font-size: 25px;
+			margin-left: 30px;
+			text-shadow: 2px 2px 2px white;
+		}
+		
+		nav li a:hover {
+        color: #008000;
+
+		}
+		.btn:hover{
+			background-color: white;
+			color: black;
+			font-size: 24px;
+			transition: 5s;
+
+		}
+		.classname:hover{
+			background-color: gray;
+			box-shadow: 1px 1px 1px 1px skyblue;
+			border: 2px solid gray;
+			font-size: 22px;
+			width: 155px;
+
+
+		}
+/*	header ends	*/
+                   /*		contact strt*/
+	.container{
+			min-height: 100vh;
+			display: flex;
+			background-image:url(hospital.jpg);
+			justify-content: center;
+			 background-position: center;
+            background-size: cover;
+		    height: 100vh;
+			align-items:center;
+			
+			margin-top: 20px;
+			margin-right: 200px;
+			
+		}
+		.container form{
+			width: 670px;
+			height: 475px;
+			display: flex;
+			margin-left: 200px;
+			justify-content: center;
+			box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
+			border-radius: 15px;
+			background:black(0,0,0,0.5);
+			backdrop-filter:blur(10px);
+			flex-wrap: wrap;
+			
+		
+		}
+		.container form h1{
+			color:black;
+			font-weight:500;
+			margin-top:20px;
+			width: 500px;
+			text-align:center;
+		}
+		.container form input{
+			width: 200px;
+			height:40px;
+			padding-left: 10px;
+			outline:none;
+			border: none;
+			font-size: 15px;
+			margin: 15px;
+			margin-bottom: 10PX;
+			background:none;
+			border-bottom:2px solid black;
+			color: black;
+		}
+.container form input::placeholder{
+	color:#ddd;
+	color: black;
+
+}
+.container form #Lastname
+{
+	 margin-left: 20px;
+}
+.container form #Mobile{
+ margin-left: 20px;
+}
+.container form h4{
+		color:black;
+			font-weight:340;
+			margin-top:20px;
+			width: 600px;
+			margin-top: 20px;
+		}
+
+.container form textarea{
+	background:none;
+	border: none;
+	border-bottom: 2px solid black;
+	color: black ;
+	font-weight:200;
+	font-size:15px;
+	padding: 10px;
+	outline:none;
+	min-width: 640px;
+	max-width:640px;
+	min-height: 60px;
+	max-height:60px;
+}
+textarea::-webkit-scrollbar{
+width: 100;
+}
+textarea::-webkit-scrollbar-thumb{
+	background-color:rgba(194, 194, 194, 0.713);}
+	.container form #button{
+		border:none;
+		background: #fff;
+		border-radius: 5px;
+		margin-top:5px;
+		font-weight:640;
+		font-size: 20px;
+		background-color: black;
+		color: #fff;
+		width :150px;
+		padding: 0;
+		height: 40px;
+		margin-left:50px;
+		margin-bottom: 30px;
+		transition: 0.3s;
+	}
+	.container form #button:hover{
+	opacity: 0.7;
+	font-size: 20px;
+	width: 220px;
+	box-shadow: 2px 2px 2px pink;
+border-radius: 28px;
+background-color: gray;
+color: white;
+}
+	</style>
+</head>
+<body>
+	 <!-- header strt --> -->
+	  <header>
+		<div class="logo">
+			<img src="loggo.jpg">
+		</div>
+		<nav><ul>
+		<li><a href="index.html">HOME</li>
+		<li><a href="about.html">ABOUT</li>
+		<li><a href="ser.html">SERVICE</li>
+		<li><a href="contact.html">CONTACT</li>
+			<li><a href="ourdr.html">OUR DOCTORS</li>
+		</ul></nav>
+		 <button class="classname"><a href="sign.html">SIGN IN</a></button>
+    </header> 
+    <!-- header ends -->
+	<!--contact strt -->
+ <div class="container">
+	<form>
+		<h1>Contact Us Form</h1>
+		<input type="text" id="Firstname" placeholder="Firstname" required>		
+		<input type="text" id="Lastname" placeholder="Lastname" required>		
+		<input type="text" id="Email" placeholder="Email" required>		
+		<input type="text" id="Mobile" placeholder="Mobile" required>	
+		<h4>Type Your Message Here...</h4>	
+		<textarea required></textarea>
+		<input type="submit"  value="Send" id="button" >		
+
+</form>
+</div>
+
+</body>
+</html>
